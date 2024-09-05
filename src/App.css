@@ -5,38 +5,46 @@
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav{
+  position: fixed; 
+  top: 0;              
+  left: 0;             
+  width: 100%;         
+  color: white;        
+  padding: 15px;     
+  z-index: 1000;       
+  text-align: center; 
+  align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.isolg {
+  width: 300px;       
+  height: auto;         
 }
 
-.card {
-  padding: 2em;
+.isolg img {
+  width: 100%;          /* La imagen tomará el 100% del ancho del contenedor */
+  height: auto;         /* Mantiene la proporción de la imagen */
+  max-width: 121px;     /* Máximo ancho de la imagen */
 }
 
-.read-the-docs {
-  color: #888;
+/* Estilos para el nav con la clase 'nav-list' */
+.nav-list {
+  background-color: #333;  /* Color de fondo */
+  padding: 10px;           /* Espaciado interno */
+}
+
+.nav-list ul {
+  list-style-type: none;   /* Eliminar viñetas de la lista */
+  padding: 0;
+}
+
+.nav-list li {
+  display: inline;         /* Mostrar los elementos en línea */
+  margin-right: 20px;      /* Espaciado entre los elementos */
+  color: white;            /* Color del texto */
+}
+
+.nav-list li:hover {
+  text-decoration: underline; /* Subrayar al pasar el cursor */
 }
